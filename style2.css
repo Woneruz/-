@@ -1,0 +1,264 @@
+/* GLOBAL */
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+    background-color: #252A36;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#container{
+    height: 100%;
+}
+/* PROFILE INFO */
+.left-sidebar{
+    background-color: #3a4254;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 20px;
+}
+.avatar{
+    border-radius: 99999999px;
+    overflow: hidden;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+.avatar-picture{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+}
+.username{
+    color: #D63189;
+    font-size: 38px;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.bio{
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px 10px 40px;
+}
+.back-to-techtok{
+    text-transform: uppercase;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 14px;
+    border: #D63189 2px solid;
+    border-radius: 10px;
+    background-color: rgba(214, 49, 137, 0.25);
+    padding: 10px 0px;
+    transition: background-color 0.1s;
+}
+.back-to-techtok:hover{
+    background-color: rgba(156, 0, 119, 0.25);
+}
+
+/* ARTICLE */
+.article{
+    padding: 20px 10% 40px;
+}
+.article-header{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+.article-header.top{
+    padding-top: 20px
+}
+.link-btn{
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(214, 49, 137, 0.25);
+    border: #D63189 2px solid;
+    border-radius: 10px;
+    transition: background-color 0.1s;
+}
+.link-btn:hover{
+    background-color: rgba(156, 0, 119, 0.25);
+}
+
+/* FOOTER */
+.footer{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background-color: #3a4254;
+    padding-bottom: 20px;
+}
+.footer-left{
+    display: none;
+}
+.footer-btm{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 20px;
+    display: block;
+}
+.copyright-info{
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+/* COOKIE CONSENT */
+#simple-cookie-consent {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    resize: vertical;
+    overflow: auto;
+    z-index: 999999999;
+    background: rgba(0, 0, 0, 0.7);
+}
+#simple-cookie-consent .cookie-consent-container {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    margin: -100px auto 0;
+    background: #3a4254;
+    padding: 20px;
+    max-width: 500px;
+    border: #D63189 1px solid;
+    border-radius: 10px;
+}
+#simple-cookie-consent .cookie-consent-selection {
+    text-align: center;
+}
+#simple-cookie-consent button {
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0 0 10px;
+    background: none;
+    font-size: 1.1em;
+}
+#simple-cookie-consent button.cookie-consent-allow {
+    background-color: rgba(214, 49, 137, 0.25); 
+    border: #D63189 1px solid;
+    border-radius: 8px;
+    color: #ffffff;
+}
+#simple-cookie-consent button.cookie-consent-allow:focus,
+#simple-cookie-consent button.cookie-consent-allow:hover {
+    background-color: rgba(156, 0, 119, 0.25);
+    cursor: pointer;
+}
+#simple-cookie-consent button.cookie-consent-deny {
+    color: #ffffff;
+    padding: 5px 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+#simple-cookie-consent button.cookie-consent-deny:focus,
+button.cookie-consent-deny:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#simple-cookie-consent hr {
+margin: 15px 0;
+}
+.privacy-policy-linkk{
+    text-decoration: underline;
+}
+
+/* TABLET */
+@media only screen and (min-width: 600px){
+    /* LEFT SIDEBAR */
+    .left-sidebar{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+	    vertical-align: top;
+	    height: 100%;
+	    width: 40%;
+	    overflow: auto;
+    }
+    .avatar{
+        margin-top: 30px;
+    }
+    .username{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 28px;
+    }
+    .bio{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .back-to-techtok{
+        margin: 40px 10%;
+    }
+
+    /* ARTICLE */
+    .article{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        width: 60%;
+        overflow: auto;
+    }
+    .article-content{
+        padding: 50px 10%;
+    }
+    .article-header{
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+    .footer-btm{
+        display: none;
+    }
+    .footer-left{
+        display: block;
+    }
+} 
+
+@media only screen and (min-width: 748px){
+    .left-sidebar{
+        width: 25%;
+    }
+    .article{
+        width: 75%;
+    }
+
+    .username{
+        font-size: 40px;
+    }
+    .bio{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .article-content{
+        padding-right: 30%;
+        padding-left: 30%;
+        padding-bottom: 50px;
+    }
+    .article-header{
+        font-size: 24px;
+    }
+    .link-btn{
+        font-size: 16px;
+    }
+}
